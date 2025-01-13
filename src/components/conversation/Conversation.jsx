@@ -111,9 +111,9 @@ export default function Conversation({ receiver, user }) {
             </div>
 
             <div className="user-conv-header-container">
-              <FaPhone color="dodgerblue" size="2vh" />
-              <FaVideo color="dodgerblue" size="2vh" />
-              <FaInfoCircle color="dodgerblue" size="2vh" />
+              <FaPhone color="dodgerblue" />
+              <FaVideo color="dodgerblue" />
+              <FaInfoCircle color="dodgerblue" />
             </div>
           </div>
 

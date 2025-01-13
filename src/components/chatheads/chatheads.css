@@ -11,6 +11,12 @@
   background-color: #242526;
 }
 
+@media screen and (min-width: 768px) {
+  .chat-heads {
+    width: 300px;
+  }
+}
+
 .chat-head-item {
   display: flex;
   align-items: center;
@@ -23,12 +29,6 @@
 .conv-container {
   border-right: 2px solid rgb(112, 110, 110, 0.2);
   background-color: #242526;
-}
-
-@media screen and (min-width: 768px) {
-  .conv-container {
-    width: 23%;
-  }
 }
 
 .user-profile-pic-text {
@@ -62,6 +62,12 @@
 .conversations-header .icon {
   margin-right: 10px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .conversations-header .icon {
+    display: none;
+  }
 }
 
 .chat-heads-search {

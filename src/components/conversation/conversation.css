@@ -14,11 +14,24 @@
   background-color: #242526;
 }
 
+@media screen and (min-width: 768px) {
+  .user-conversation-header {
+    width: calc(100% - 300px);
+    left: 300px;
+  }
+}
+
 .conversation-messages {
   margin-top: 130px;
   margin-bottom: 70px;
   overflow-y: scroll;
   padding: 0vh 1vh 0vh 1vh;
+}
+
+@media screen and (min-width: 768px) {
+  .conversation-messages {
+    margin-left: 300px;
+  }
 }
 
 .input-container {
@@ -31,6 +44,14 @@
   padding: 10px 0;
   align-items: center;
   justify-content: center;
+  border-top: 1px solid #333;
+}
+
+@media screen and (min-width: 768px) {
+  .input-container {
+    width: calc(100% - 300px);
+    left: 300px;
+  }
 }
 
 .input-container svg {
@@ -73,7 +94,8 @@
 }
 
 .user-conv-header-container svg {
-  margin: 0vh 1vh 0vh 1vh;
+  margin: 0 15px;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
