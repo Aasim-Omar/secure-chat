@@ -1,0 +1,38 @@
+.login-screen-container {
+  margin: 10px auto;
+  width: 100%;
+  padding: 60px 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.login-screen-container button {
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
+.login-screen-container .input-container {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.login-screen-container input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.login-title {
+  font-size: 44px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.register-button {
+  margin-top: 50px !important;
+}
