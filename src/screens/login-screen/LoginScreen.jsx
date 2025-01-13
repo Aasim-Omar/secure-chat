@@ -102,12 +102,12 @@ export default function LoginScreen({ setUser }) {
     <div className="login-screen-container">
       <p className="login-title">Welcome!</p>
 
-      <div className="input-container">
+      <div className="login-input-container">
         <p>Email</p>
         <input placeholder="your.email@example.com" ref={email} />
       </div>
 
-      <div className="input-container">
+      <div className="login-input-container">
         <p>Password</p>
         <input type="password" placeholder="Strong passowrd" ref={password} />
       </div>

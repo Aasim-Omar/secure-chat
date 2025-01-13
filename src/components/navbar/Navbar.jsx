@@ -21,10 +21,17 @@ export default function Navbar({ user, setUser }) {
     history.push("/");
   };
 
+  function toggleChatHeads() {
+    const chatHeads = document.querySelector(".chat-heads");
+    if (chatHeads) {
+      chatHeads.style.display = chatHeads.style.display === "none" ? "block" : "none";
+    }
+  }
+
   return (
     <div className="navbar-container">
       {/* Left */}
-      {user ? <div className="left-container"><FaAlignJustify color="#fff" /> <div className="navbar-logo">SecureChat</div></div> : <div className="navbar-logo">SecureChat</div>}
+      {user ? <div className="left-container"> <FaAlignJustify className='icon' color="#fff" onClick={toggleChatHeads} /> <div className="navbar-logo">SecureChat</div></div> : <div className="navbar-logo">SecureChat</div>}
 
       {/* Right */}
       <div>

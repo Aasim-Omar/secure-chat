@@ -1,0 +1,91 @@
+.chat-heads {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  z-index: 10;
+  border-right: 1px solid #333;
+  background-color: #242526;
+}
+
+.chat-head-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5vh;
+  padding: 1vh;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.conv-container {
+  border-right: 2px solid rgb(112, 110, 110, 0.2);
+  background-color: #242526;
+}
+
+@media screen and (min-width: 768px) {
+  .conv-container {
+    width: 23%;
+  }
+}
+
+.user-profile-pic-text {
+  font-size: 3.5vh;
+  text-transform: capitalize;
+}
+
+.chat-head-item:hover {
+  background-color: rgb(112, 110, 110, 0.2);
+}
+
+.user-profile-pic-container {
+  width: 4vh;
+  height: 4vh;
+  background-color: #ccc;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1vh;
+  padding: 0.5vh;
+}
+
+.conversations-header {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 20px 10px;
+  margin: 0;
+}
+
+.conversations-header .icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.chat-heads-search {
+  width: 95%;
+  margin-bottom: 15px;
+  background-color: #222;
+}
+
+.conv-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conv-header-container svg {
+  margin-left: 0.5vh;
+  color: white;
+  background-color: rgb(112, 110, 110, 0.2);
+  padding: 0.8vh;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chat-heads-container {
+  overflow-y: scroll;
+  padding-right: 10px;
+}

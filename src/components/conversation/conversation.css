@@ -1,0 +1,100 @@
+.conversation-container {
+  width: 100%;
+}
+.user-conversation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  background-color: #242526;
+}
+
+.conversation-messages {
+  margin-top: 130px;
+  margin-bottom: 70px;
+  overflow-y: scroll;
+  padding: 0vh 1vh 0vh 1vh;
+}
+
+.input-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #242526;  
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-container svg {
+  color: dodgerblue;
+  font-size: 3rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.input-message,
+.input-message input {
+  width: 100%;
+}
+
+.input-container button {
+  margin-left: 2vh;
+}
+
+.message-container {
+  display: flex;
+}
+
+.message-bubble {
+  background-color: #3a3b3c;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  min-width: 8vh;
+  color: white;
+}
+
+.right-message-bubble {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.user-conv-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-conv-header-container svg {
+  margin: 0vh 1vh 0vh 1vh;
+  cursor: pointer;
+}
+
+.no-conversation {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.no-conversation p {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4vh;
+  color: rgb(112, 110, 110, 0.2);
+}
+
+.no-conversation svg {
+  font-size: 10vh;
+  color: rgb(112, 110, 110, 0.2);
+}
